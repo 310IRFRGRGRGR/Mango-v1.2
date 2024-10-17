@@ -1,0 +1,16 @@
+img{
+    width: 600px;
+    height: 400px;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: aqua;
+    background-color: blue;
+}
+h3{
+    color: chartreuse;
+    background-color: blue;
+}
