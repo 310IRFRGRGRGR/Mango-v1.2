@@ -37,7 +37,6 @@ body{
     width: 100%;
     height: 100%;
     background: transparent;
-    border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
@@ -76,8 +75,7 @@ body{
 .wrapper .btn{
     width: 100%;
     height: 45px;
-    background: #fff;
-    border: none;
+    background: #03f404;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
